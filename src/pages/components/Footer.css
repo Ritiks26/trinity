@@ -1,0 +1,19 @@
+footer {
+  font-family: var(--font-main);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.x-com,
+.instagram,
+.youtube,
+.facebook {
+  border: 1px solid gray;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.35rem;
+}

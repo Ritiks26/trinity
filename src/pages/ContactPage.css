@@ -1,0 +1,76 @@
+.contact-section {
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+}
+
+.contact-page-container {
+  position: relative;
+  background-image: url("https://plus.unsplash.com/premium_photo-1661930029003-0404b6e917f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dW5pdmVyc2l0eSUyMGJ1aWxkaW5nfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay {
+  border-image: linear-gradient(rgba(0, 0, 0, 0.465)) fill 1;
+}
+
+.contact-content {
+  width: 95%;
+  font-family: var(--font-main);
+  position: absolute;
+  left: 3%;
+  top: 50%;
+}
+
+.contact-content h1 {
+  color: var(--white-font);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 0.25rem 0;
+}
+
+.contact-content p {
+  color: var(--white-font);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.contact-details-container {
+  font-family: var(--font-main);
+  padding: 1.5rem 1rem;
+  background-color: whitesmoke;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.contact-details-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-details-container h4 {
+  font-size: 0.95rem;
+  width: 75%;
+  color: rgb(74, 74, 74);
+  margin: 0;
+}
+
+.contact-details-child {
+  margin-top: 2rem;
+}
+
+.email,
+.contact-no,
+.address {
+  margin: 1.25rem 0;
+  font-size: 1rem;
+}
+
+.office-timing h2 {
+  font-weight: 600;
+}
