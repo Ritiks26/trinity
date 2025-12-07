@@ -1,8 +1,8 @@
-.eligibility-criteria-container {
+.admission-info-container {
   padding: 0.5rem;
 }
 
-.eligibility-criteria-container h2 {
+.admission-info-container h2 {
   position: relative;
   font-family: var(--font-heading);
   text-align: center;
@@ -22,90 +22,34 @@
   }
 }
 
-.eligibility-criteria {
-  background-image: radial-gradient(circle at top center, #333 20%, black 100%);
-  color: var(--white-font);
-  font-family: var(--font-main);
-  padding: 0.5rem 2rem;
+.admission-details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.admission-details-child {
+  position: relative;
+  padding: 1.5rem 1rem;
+  height: 80vh;
+  width: 100%;
   border-radius: 0.5rem;
-}
-
-.eligibility-criteria ul {
-  list-style: disc;
-}
-
-.eligibility-criteria ul li {
-  margin: 1rem 0;
-}
-
-.admission-process-container {
-  padding: 0.5rem;
-}
-
-.admission-process-container h2 {
-  position: relative;
   font-family: var(--font-heading);
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  width: fit-content;
-
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    background-color: red;
-    height: 5%;
-    width: 75%;
-  }
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
 }
 
-.admission-process {
-  background-image: radial-gradient(circle at top center, #333 20%, black 100%);
-  color: var(--white-font);
-  font-family: var(--font-heading);
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-}
-
-.admission-process p {
-  margin: 1rem 0;
-}
-
-.documents-required-container {
-  margin: 0 0.5rem;
-}
-
-.documents-required-container h2 {
-  position: relative;
-  font-family: var(--font-heading);
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  width: fit-content;
-
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    background-color: red;
-    height: 5%;
-    width: 75%;
-  }
-}
-
+.eligibility-criteria,
+.admission-process,
 .documents-required {
-  background-image: radial-gradient(circle at top center, #333 20%, black 100%);
-  color: var(--white-font);
-  font-family: var(--font-heading);
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-}
+  margin-top: 1.5rem;
 
-.documents-required p {
-  margin: 1rem 0;
+  p {
+    margin: 0.75rem 0;
+
+    span {
+      margin-right: 0.25rem;
+    }
+  }
 }
