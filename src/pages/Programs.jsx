@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import { courses } from "../data/loadData";
 import "./Programs.css";
@@ -9,20 +10,12 @@ export function Programs() {
       <Header />
       <main>
         <section className="program-section">
-          <div className="program-container hero-slide overlay">
-            <div className="program-content fade-up">
-              <h1>
-                Programs<span style={{ color: "red" }}>.</span>
-              </h1>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                At Trinity, we provide a wide range of academic programs crafted
-                to empower students with strong foundational knowledge and
-                industry-relevant expertise. Each course is structured to
-                promote critical thinking, hands-on learning, and professional
-                growth.
-              </p>
-            </div>
-          </div>
+          <Hero
+            title={"Programs"}
+            content={
+              "At Trinity, we provide a wide range of academic programs crafted to empower students with strong foundational knowledge and industry-relevant expertise. Each course is structured to promote critical thinking, hands-on learning, and professional growth."
+            }
+          />
           <div className="programs">
             <div
               style={{

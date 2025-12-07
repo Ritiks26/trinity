@@ -1,5 +1,5 @@
-import { Link } from "react-router";
 import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import { loadCards } from "../data/loadData";
 import "./HomePage.css";
@@ -10,30 +10,15 @@ export function HomePage() {
       <title>Home - Trinity College</title>
       <Header />
       <main>
-        <section className="hero-section">
-          <div className="hero-slide overlay">
-            <div className="hero-content">
-              <h1 className="fade-up">
-                Empowering Students Through Quality Education, Innovation &
-                Integrity<span style={{ color: "red" }}>.</span>
-              </h1>
-              <p className="fade-up">
-                Trinity is committed to shaping future-ready professionals in
-                Computer Science, Management, and Library Sciences through
-                excellence in teaching and modern learning infrastructure.
-              </p>
-              <div className="navigate fade-up">
-                <Link to={"/programs"} className="link">
-                  Explore Programs
-                </Link>
-                <Link to={""} className="link">
-                  Examinations
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <Hero
+          title={
+            "Empowering Students Through Quality Education, Innovation & Integrity"
+          }
+          content={
+            "Trinity is committed to shaping future-ready professionals in          Computer Science, Management, and Library Sciences through excellence in teaching and modern learning infrastructure."
+          }
+          showLinks={true}
+        />
         <section className="why-choose fade-up">
           <div style={{ display: "flex", justifyContent: "center" }}>
             <h2>Why Choose Trinity</h2>

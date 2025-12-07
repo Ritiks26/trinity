@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import "./Admission.css";
 
@@ -8,19 +9,12 @@ export function Admission() {
       <Header />
       <main>
         <section className="admission-section">
-          <div className="admission-container hero-slide overlay">
-            <div className="admission-content fade-up">
-              <h1>
-                Trinity Admission<span style={{ color: "red" }}>.</span>
-              </h1>
-              <p>
-                We invite aspiring students to join our programs and build a
-                strong academic and professional future with us. Admissions are
-                open for undergraduate and postgraduate programs across multiple
-                disciplines.
-              </p>
-            </div>
-          </div>
+          <Hero
+            title={"Trinity Admission"}
+            content={
+              "We invite aspiring students to join our programs and build a strong academic and professional future with us. Admissions are open for undergraduate and postgraduate programs across multiple disciplines."
+            }
+          />
           <div className="eligibility-criteria-container">
             <div style={{ display: "flex", justifyContent: "center" }}>
               <h2>Eligibility Criteria</h2>.

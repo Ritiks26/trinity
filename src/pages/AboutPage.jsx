@@ -1,7 +1,7 @@
 import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import wavyImageHalf from "../assets/wavy-half.png";
-import wavyImageFull from "../assets/wavy.png";
 import "./AboutPage.css";
 
 export function AboutPage() {
@@ -11,20 +11,13 @@ export function AboutPage() {
       <Header />
       <main>
         <section className="about-section">
-          <div className="about-container hero-slide overlay">
-            <div className="about-content fade-up">
-              <h1>
-                About Us<span style={{ color: "red" }}>.</span>
-              </h1>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Trinity is a forward-thinking educational institution dedicated
-                to delivering quality higher education in technology,
-                management, and information sciences. With a focus on academic
-                rigor and real-world skills, Trinity nurtures students to excel
-                in their careers and contribute meaningfully to society.
-              </p>
-            </div>
-          </div>
+          <Hero
+            title={"About Us"}
+            content={
+              "Trinity is a forward-thinking educational institution dedicated                to delivering quality higher education in technology,                management, and information sciences. With a focus on academic                rigor and real-world skills, Trinity nurtures students to excel                in their careers and contribute meaningfully to society."
+            }
+          />
+
           <div className="our-vision fade-up">
             <h2>Our Vision</h2>
             <div className="vision-grid-content">

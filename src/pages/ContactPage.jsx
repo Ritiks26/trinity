@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import "./ContactPage.css";
 
@@ -8,18 +9,12 @@ export function ContactPage() {
       <Header />
       <main>
         <section className="contact-container">
-          <div className="contact-page-container hero-slide overlay">
-            <div className="contact-content fade-up">
-              <h1>
-                Contact Us<span style={{ color: "red" }}>.</span>
-              </h1>
-              <p>
-                We’re here to assist you with queries regarding admissions,
-                programs, and campus information. Reach out to Trinity College
-                using any of the contact points below.
-              </p>
-            </div>
-          </div>
+          <Hero
+            title={"Contact Us"}
+            content={
+              "We’re here to assist you with queries regarding admissions, programs, and campus information. Reach out to Trinity College using any of the contact points below."
+            }
+          />
 
           <div className="contact-details-container">
             <h1>Get In Touch</h1>
