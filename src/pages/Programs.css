@@ -19,7 +19,7 @@
 }
 
 .programs-offered-container {
-  color: var(--white-font);
+  color: var(--black-font);
   margin: 0 0.5rem;
   margin-bottom: 1rem;
   display: grid;
@@ -37,7 +37,8 @@
   padding: 2rem 1.5rem 1.25rem 1.5rem;
   font-family: var(--font-heading);
   border-radius: 0.75rem;
-  background-image: radial-gradient(circle at top center, #333 20%, black 100%);
+  /* background-image: radial-gradient(circle at top center, #333 20%, black 100%); */
+  background-color: whitesmoke;
   border: 1px solid lightgray;
   overflow: hidden;
 }
@@ -95,12 +96,12 @@
 }
 
 .enroll button {
-  color: var(--black-font);
-  background-color: whitesmoke;
+  color: var(--white-font);
+  background-color: black;
   width: 100%;
   padding: 0.5rem 0;
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 12px white;
+  box-shadow: 0px 0px 6px black;
   cursor: pointer;
 
   &::before {
@@ -110,10 +111,6 @@
     border: 2px solid gray;
     border-radius: 0.75rem;
   }
-}
-
-.faculty-container {
-  font-family: var(--font-heading);
 }
 
 .faculty-container h2 {
@@ -145,32 +142,36 @@
 }
 
 .faculty-grid-child {
-  display: flex;
-  flex-direction: column;
   background-color: whitesmoke;
   border: 1px solid lightgray;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
   color: var(--black-font);
   font-family: var(--font-heading);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
 }
 
 .faculty-grid-child h3 {
   position: relative;
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 5%;
+    width: 75%;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+  }
 }
 
-.faculty-grid-child p {
-  font-size: 1rem;
-  margin: 0.25rem 0;
-  padding: 0.75rem;
+.department-team p {
   font-weight: 500;
-  border-radius: 0.5rem;
-  border: 1px solid lightgray;
-  font-family: var(--font-main);
+  font-family: var(--font-heading);
+  margin: 0.5rem 0;
 }
 
 @media (min-width: 768px) {
@@ -204,11 +205,10 @@
 
   .faculty-grid {
     display: grid;
-    grid-template-columns: repeat(3, 28%);
+    grid-template-columns: repeat(3, 25%);
     justify-content: center;
     gap: 0.5rem;
     margin: 0 0.5rem;
-    text-align: center;
   }
 }
 

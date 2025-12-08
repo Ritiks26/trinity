@@ -113,7 +113,15 @@ header {
   .nav ul li a:hover {
     color: gray;
   }
+
+  .hamburger-menu img {
+    filter: invert(1);
+  }
 }
+
+/* header.header-text-change .hamburger-menu img {
+  filter: invert(0);
+} */
 
 .left-section {
   display: flex;
@@ -180,6 +188,8 @@ header {
 .hamburger-menu img {
   height: 100%;
   width: 100%;
+  filter: invert(0);
+  transition: filter 0.3s ease-in-out;
 }
 
 .android-menus {

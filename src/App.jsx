@@ -5,6 +5,7 @@ import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { Programs } from "./pages/Programs";
 import { Admission } from "./pages/Admission";
+import { Affiliation } from "./pages/Affiliation";
 import { ContactPage } from "./pages/ContactPage";
 import "./App.css";
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/admission" element={<Admission />} />
         <Route path="/contact-us" element={<ContactPage />} />
+        <Route path="/affiliation" element={<Affiliation />} />
       </Routes>
     </>
   );

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink, Link } from "react-router";
 import { useEffect, useRef, useState } from "react";
 import androidMenu from "../../assets/hamburger-menu.svg";
 import removeIcon from "../../assets/remove.svg";
@@ -48,10 +48,10 @@ export function Header() {
         <div className="logo-icon">
           <img src="assets/images/logo-t.svg" alt="" />
         </div>
-        <div className="header-location">
+        <Link to={"/"} className="header-location">
           <div className="college-name">Trinity College</div>
           <div className="college-location">Patliputra, Patna</div>
-        </div>
+        </Link>
       </div>
       <div className="nav">
         <ul>
@@ -81,7 +81,7 @@ export function Header() {
           </li>
           <li>
             <NavLink
-              to={""}
+              to={"/affiliation"}
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               affiliation
@@ -121,7 +121,7 @@ export function Header() {
             </NavLink>
           </li>
           <li>
-            <NavLink onClick={toggleAndroidMenu} to={""}>
+            <NavLink onClick={toggleAndroidMenu} to={"/affiliation"}>
               Affiliation
             </NavLink>
           </li>

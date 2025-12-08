@@ -2,6 +2,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Footer } from "./components/Footer";
 import { courses } from "../data/loadData";
+import { faculties } from "../data/loadData";
 import "./Programs.css";
 
 export function Programs() {
@@ -104,32 +105,20 @@ export function Programs() {
               <h2>Faculty Directory</h2>
             </div>
             <div className="faculty-grid">
-              <div className="faculty-grid-child">
-                <h3>Computer Science Department</h3>
-                <p>Ms. Nikita Nandani</p>
-                <p>Mr. Rahul Kumar</p>
-                <p>Mr. Mukesh Kumar</p>
-                <p>Mr. Jaswant Singh</p>
-                <p>Md. Faiz Ahmad</p>
-                <p>Mr. Rajesh Kumar</p>
-                <p>Mr. Rajesh Mahto</p>
-              </div>
-              <div className="faculty-grid-child">
-                <h3>Library Science Department</h3>
-                <p>Mr. Surendra Kumar</p>
-                <p>Mr. Sibesh Kumar</p>
-                <p>Ms. Ankita Singh</p>
-              </div>
-              <div className="faculty-grid-child">
-                <h3>Management Department</h3>
-                <p>Dr. Priyanka Sinha</p>
-                <p>Dr. Kumari Shikha</p>
-                <p>Mr. Mukul Kumar</p>
-                <p>Mrs. Shikha Chauhan</p>
-                <p>Mr. Ankit Akhand</p>
-                <p>Mr. Rajesh Ranjan</p>
-                <p>Ms. Ankita Singh</p>
-              </div>
+              {faculties.map((faculty, index) => (
+                <div key={index} className="faculty-grid-child">
+                  <div style={{ display: "flex", justifyContent: "center" }}>
+                    <h3>{faculty.department}</h3>
+                  </div>
+                  <div className="department-team">
+                    {faculty.facultyMembers.map((member, i) => (
+                      <p key={i}>
+                        <span className="with-check">&#10003;</span> {member}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

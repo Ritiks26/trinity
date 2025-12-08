@@ -77,3 +77,38 @@ export const courses = [
     careerPath2: "Consultant Business Analyst",
   },
 ];
+
+export const faculties = [
+  {
+    department: "Computer Science Department",
+    facultyMembers: [
+      "Ms. Nikita Nandani",
+      "Mr. Rahul Kumar",
+      "Mr. Mukesh Kumar",
+      "Mr. Jaswant Singh",
+      "Md Faiz Ahmad",
+      "Mr. Rajesh Kumar",
+      "Mr. Rajesh Mahto",
+    ],
+  },
+  {
+    department: "Library  Science Department",
+    facultyMembers: [
+      "Mr. Surendra Kumar",
+      "Mr. Sibesh Kumar",
+      "Ms. Ankita Singh",
+    ],
+  },
+  {
+    department: "Management Department",
+    facultyMembers: [
+      "Dr. Priyanka Sinha",
+      "Dr. Kumari Shikha",
+      "Mr. Mukul Kumar",
+      "Mrs. Shikha Chauhan",
+      "Mr. Ankit Akhand",
+      "Mr. Rajesh Ranjan",
+      "Ms. Ankita Singh",
+    ],
+  },
+];
