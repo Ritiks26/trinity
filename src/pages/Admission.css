@@ -51,3 +51,15 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .admission-details-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1028px) {
+  .admission-details-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

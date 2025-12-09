@@ -758,18 +758,6 @@
 }
 
 @media (min-width: 768px) {
-  .about-content {
-    width: 80%;
-  }
-
-  .about-content h1 {
-    font-size: 2rem;
-  }
-
-  .about-content p {
-    font-size: 1.25rem;
-  }
-
   .our-vision h2 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
@@ -821,18 +809,6 @@
 }
 
 @media (min-width: 1024px) {
-  .about-content {
-    width: 60%;
-  }
-
-  .about-content h1 {
-    font-size: 2.25rem;
-  }
-
-  .about-content p {
-    font-size: 1rem;
-  }
-
   .our-vision h2 {
     font-size: 1.5rem;
   }

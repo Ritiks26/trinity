@@ -175,18 +175,6 @@
 }
 
 @media (min-width: 768px) {
-  .program-content {
-    width: 80%;
-  }
-
-  .program-content h1 {
-    font-size: 2rem;
-  }
-
-  .program-content p {
-    font-size: 1rem;
-  }
-
   .programs h2 {
     font-size: 1.5rem;
   }
@@ -213,18 +201,6 @@
 }
 
 @media (min-width: 1024px) {
-  .program-content {
-    width: 60%;
-  }
-
-  .program-content h1 {
-    font-size: 2.25rem;
-  }
-
-  .program-content p {
-    font-size: 1rem;
-  }
-
   .programs h2 {
     font-size: 1.5rem;
   }
