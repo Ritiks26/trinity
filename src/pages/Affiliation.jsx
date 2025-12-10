@@ -149,6 +149,41 @@ export function Affiliation() {
               </p>
             </div>
           </div>
+          <div className="affiliated-programs-child">
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <h3>Content Coming Soon</h3>
+            </div>
+            <div className="affiliated-courses">
+              <p>
+                <span className="with-check">&#10003;</span>Content Under
+                Preparation
+              </p>
+              <p>
+                <span className="with-check">&#10003;</span>Content Under
+                Preparation
+              </p>
+              <p>
+                <span className="with-check">&#10003;</span>Content Under
+                Preparation
+              </p>
+              <p>
+                <span className="with-check">&#10003;</span>Content Under
+                Preparation
+              </p>
+              <p>
+                <span className="with-check">&#10003;</span>Content Under
+                Preparation
+              </p>
+              <p>
+                <span className="with-check">&#10003;</span>Content Under
+                Preparation
+              </p>
+              <p>
+                <span className="with-check">&#10003;</span>Content Under
+                Preparation
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

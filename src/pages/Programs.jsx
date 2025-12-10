@@ -28,8 +28,8 @@ export function Programs() {
             </div>
           </div>
           <div className="programs-offered-container">
-            {courses.map((course) => (
-              <div className="programs-offered-child fade-up">
+            {courses.map((course, i) => (
+              <div key={i} className="programs-offered-child fade-up">
                 <div>
                   <h4>{course.name}</h4>
                   <div className="duration">
@@ -119,6 +119,33 @@ export function Programs() {
                   </div>
                 </div>
               ))}
+              <div className="faculty-grid-child">
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <h3>Content Coming Soon</h3>
+                </div>
+                <div className="department-team">
+                  <p>
+                    <span className="with-check">&#10003;</span>
+                    John Doe
+                  </p>
+                  <p>
+                    <span className="with-check">&#10003;</span>
+                    John Doe
+                  </p>
+                  <p>
+                    <span className="with-check">&#10003;</span>
+                    John Doe
+                  </p>
+                  <p>
+                    <span className="with-check">&#10003;</span>
+                    John Doe
+                  </p>
+                  <p>
+                    <span className="with-check">&#10003;</span>
+                    John Doe
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

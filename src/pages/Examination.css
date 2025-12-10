@@ -1,0 +1,83 @@
+.examination-container {
+  font-family: var(--font-heading);
+}
+
+.examination-container h2 {
+  position: relative;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: fit-content;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-color: red;
+    height: 5%;
+    width: 75%;
+  }
+}
+
+.examination-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.examination-child {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  padding-bottom: 1.25rem;
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+}
+
+.examination-child h3 {
+  position: relative;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: fit-content;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-color: red;
+    height: 5%;
+    width: 75%;
+  }
+}
+
+.examination-child-content p {
+  margin: 0.5rem 0;
+
+  span {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: red;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .examination-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .examination-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
