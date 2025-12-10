@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router";
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { Programs } from "./pages/Programs";
+import { Examination } from "./pages/Examination";
 import { Admission } from "./pages/Admission";
 import { Affiliation } from "./pages/Affiliation";
 import { ContactPage } from "./pages/ContactPage";
@@ -22,11 +23,16 @@ function App() {
           }
         });
       },
-      { threshold: 0.2 } // 20% visible hote hi animation hoga
+      { threshold: 0.2 }
     );
 
     elements.forEach((el) => observer.observe(el));
   }, [location]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
       <Routes>
@@ -36,6 +42,7 @@ function App() {
         <Route path="/admission" element={<Admission />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="/affiliation" element={<Affiliation />} />
+        <Route path="/examination" element={<Examination />} />
       </Routes>
     </>
   );

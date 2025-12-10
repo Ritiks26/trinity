@@ -133,16 +133,13 @@
 
 @media (min-width: 768px) {
   .affiliated-programs-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .affiliation-grid-content {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.25rem;
-    margin-top: 0.5rem;
   }
 
   .affiliated-programs-grid {

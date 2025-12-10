@@ -113,7 +113,7 @@ export function Programs() {
                   <div className="department-team">
                     {faculty.facultyMembers.map((member, i) => (
                       <p key={i}>
-                        <span className="with-check">&#10003;</span> {member}
+                        <span className="with-check">&#10003;</span> {member}{" "}
                       </p>
                     ))}
                   </div>

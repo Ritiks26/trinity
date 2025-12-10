@@ -1,19 +1,153 @@
 footer {
   font-family: var(--font-main);
+  background-color: #000000;
+  color: var(--white-font);
+  padding: 0.5rem;
+  margin-top: 0.75rem;
 }
 
-.social {
+.footer-content {
+  margin-top: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.footer-content h2 {
+  font-weight: bolder;
+}
+
+.footer-mission {
+  margin-top: 0.25rem;
+
+  p {
+    color: lightgray;
+    font-size: 0.85rem;
+  }
+}
+
+.footer-nav {
+  margin: 1rem 0;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    li {
+      position: relative;
+      font-weight: 500;
+      font-size: 0.9rem;
+      cursor: pointer;
+      color: lightgray;
+      width: fit-content;
+    }
+  }
+}
+
+.footer-nav ul li a.active {
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: red;
+    width: 45%;
+    height: 10%;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.legals {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.25rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 0.5rem;
 }
 
-.x-com,
-.instagram,
-.youtube,
-.facebook {
-  border: 1px solid gray;
-  border-radius: 6px;
-  cursor: pointer;
-  padding: 0.35rem;
+.copyright p {
+  font-size: 0.75rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-mission {
+    max-width: 80%;
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .footer-nav {
+    margin: 1rem 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+
+      li {
+        position: relative;
+        font-weight: 500;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: lightgray;
+      }
+    }
+  }
+
+  .legals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .copyright p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-mission {
+    max-width: 75%;
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .footer-nav {
+    margin: 1rem 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+
+      li {
+        position: relative;
+        font-weight: 500;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: lightgray;
+      }
+    }
+  }
+
+  .legals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .copyright p {
+    font-size: 0.9rem;
+  }
 }

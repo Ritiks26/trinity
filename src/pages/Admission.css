@@ -40,6 +40,26 @@
   background-color: whitesmoke;
 }
 
+.admission-details-child h3 {
+  position: relative;
+  font-family: var(--font-heading);
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  width: fit-content;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background-color: red;
+    height: 5%;
+    width: 75%;
+  }
+}
+
 .eligibility-criteria,
 .admission-process,
 .documents-required {
@@ -54,7 +74,7 @@
 
 @media (min-width: 768px) {
   .admission-details-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

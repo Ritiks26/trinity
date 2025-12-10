@@ -16,7 +16,7 @@ export function Hero({ title, content, showLinks = false }) {
               <Link to={"/programs"} className="link">
                 Explore Programs
               </Link>
-              <Link to={""} className="link">
+              <Link to={"/examination"} className="link">
                 Examinations
               </Link>
             </div>

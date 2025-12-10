@@ -235,17 +235,24 @@ header {
 }
 
 .android-menus ul li a {
+  position: relative;
   font-size: 1.25rem;
   font-weight: 500;
 }
 
-/**/
-/* SMALL PHONES */
-/**/
+.android-menus ul li a.active {
+  &::before {
+    position: absolute;
+    content: "";
+    height: 10%;
+    width: 45%;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+  }
+}
 
 @media (min-width: 768px) {
-  header {
-  }
   .nav ul {
     display: flex;
     align-items: center;

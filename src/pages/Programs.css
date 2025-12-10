@@ -142,6 +142,9 @@
 }
 
 .faculty-grid-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: whitesmoke;
   border: 1px solid lightgray;
   padding: 1.5rem 1rem;
@@ -168,10 +171,15 @@
   }
 }
 
+.department-team {
+  width: fit-content;
+}
+
 .department-team p {
   font-weight: 500;
   font-family: var(--font-heading);
   margin: 0.5rem 0;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -192,11 +200,7 @@
   }
 
   .faculty-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 0 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -215,5 +219,9 @@
 
   .enroll button {
     font-weight: 500;
+  }
+
+  .faculty-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

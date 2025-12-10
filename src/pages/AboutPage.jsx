@@ -130,8 +130,10 @@ export function AboutPage() {
           </div>
 
           <div className="committee-members fade-up">
-            <h2>Committee Members</h2>
-            <div className="parent-container">
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <h2>Committee Members</h2>
+            </div>
+            <div className="committee-parent-container">
               <div className="members-info">
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <h3>Heads of Deparments</h3>
