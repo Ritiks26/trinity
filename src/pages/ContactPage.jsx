@@ -16,7 +16,7 @@ export function ContactPage() {
             }
           />
 
-          <div className="contact-details-container">
+          <div className="contact-details-container fade-up">
             <h1>Get In Touch</h1>
             <h4>
               Email, call, or visit to learn how Trinity can solve your problem

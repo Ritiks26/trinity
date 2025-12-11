@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export function Footer() {
   return (
-    <footer>
+    <footer className="fade-up no-shift">
       <div className="footer-content">
         <h2>Trinity College.</h2>
         <div className="footer-mission">

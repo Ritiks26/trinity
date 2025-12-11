@@ -54,11 +54,14 @@ export function Affiliation() {
         </div>
       </div>
       <div className="affiliated-programs-container">
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className="fade-up"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <h2>Affiliated Programs</h2>
         </div>
         <div className="affiliated-programs-grid">
-          <div className="affiliated-programs-child">
+          <div className="affiliated-programs-child fade-up">
             <div style={{ display: "flex", justifyContent: "center" }}>
               <h3>Science & Technology</h3>
             </div>
@@ -92,7 +95,7 @@ export function Affiliation() {
               </p>
             </div>
           </div>
-          <div className="affiliated-programs-child">
+          <div className="affiliated-programs-child fade-up">
             <div style={{ display: "flex", justifyContent: "center" }}>
               <h3>Commerce & Management</h3>
             </div>
@@ -118,7 +121,7 @@ export function Affiliation() {
               </p>
             </div>
           </div>
-          <div className="affiliated-programs-child">
+          <div className="affiliated-programs-child fade-up">
             <div style={{ display: "flex", justifyContent: "center" }}>
               <h3>Arts & Humanities</h3>
             </div>
@@ -149,7 +152,7 @@ export function Affiliation() {
               </p>
             </div>
           </div>
-          <div className="affiliated-programs-child">
+          <div className="affiliated-programs-child fade-up">
             <div style={{ display: "flex", justifyContent: "center" }}>
               <h3>Content Coming Soon</h3>
             </div>

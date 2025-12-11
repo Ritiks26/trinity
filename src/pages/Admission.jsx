@@ -16,11 +16,14 @@ export function Admission() {
             }
           />
           <div className="admission-info-container">
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              className="fade-up"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
               <h2>Admission Details</h2>
             </div>
             <div className="admission-details-container">
-              <div className="admission-details-child">
+              <div className="admission-details-child fade-up">
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <h3>Eligibility Criteria</h3>
                 </div>
@@ -42,7 +45,7 @@ export function Admission() {
                   </p>
                 </div>
               </div>
-              <div className="admission-details-child">
+              <div className="admission-details-child fade-up">
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <h3>Admission Process</h3>
                 </div>
@@ -66,7 +69,7 @@ export function Admission() {
                   </p>
                 </div>
               </div>
-              <div className="admission-details-child">
+              <div className="admission-details-child fade-up">
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <h3>Documents Required</h3>
                 </div>
