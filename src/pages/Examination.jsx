@@ -6,6 +6,7 @@ import "./Examination.css";
 export function Examination() {
   return (
     <>
+      <title>Examination - Trinity College</title>
       <Header />
       <main>
         <section className="examination-section">

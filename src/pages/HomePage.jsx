@@ -80,13 +80,13 @@ export function HomePage() {
           <div className="bg-white">
             <div className="carousel-lists">
               <ul className="carousel-track">
-                <li>Tech-enabled classNamerooms</li>
+                <li>Tech-enabled classrooms</li>
                 <li>Library & digital learning resources</li>
                 <li>Well-equipped computer laboratories</li>
                 <li>Seminar halls & training rooms</li>
                 <li>Student community spaces</li>
                 <li>Collaborative learning & activity spaces</li>
-                <li>Tech-enabled classNamerooms</li>
+                <li>Tech-enabled classrooms</li>
                 <li>Library & digital learning resources</li>
                 <li>Well-equipped computer laboratories</li>
                 <li>Seminar halls & training rooms</li>

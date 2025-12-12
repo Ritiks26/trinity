@@ -8,6 +8,7 @@ import "./Affiliation.css";
 export function Affiliation() {
   return (
     <>
+      <title>Affiliation - Trinity College</title>
       <Header />
       <Hero
         title={"Affiliation"}

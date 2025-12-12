@@ -6,6 +6,7 @@ import "./Admission.css";
 export function Admission() {
   return (
     <>
+      <title>Admission - Trinity College</title>
       <Header />
       <main>
         <section className="admission-section">

@@ -6,6 +6,7 @@ import "./ContactPage.css";
 export function ContactPage() {
   return (
     <>
+      <title>Contact - Trinity College</title>
       <Header />
       <main>
         <section className="contact-container">

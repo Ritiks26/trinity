@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --font-main: satoshi;
-  --font-heading: general sans;
+  --font-main: "Satoshi", Arial, sans-serif;
+  --font-heading: "General sans", Arial, sans-serif;
   --black-font: black;
   --white-font: white;
 }

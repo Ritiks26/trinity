@@ -8,6 +8,7 @@ import "./Programs.css";
 export function Programs() {
   return (
     <>
+      <title>Programs - Trinity College</title>
       <Header />
       <main>
         <section className="program-section">
