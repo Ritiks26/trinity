@@ -6,25 +6,23 @@ import "./Header.css";
 
 export function Header() {
   const [isAndroidMenuOpen, setIsAndroidMenuOpen] = useState(false);
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    if (isAndroidMenuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isAndroidMenuOpen]);
 
   const toggleAndroidMenu = () => {
     setIsAndroidMenuOpen(!isAndroidMenuOpen);
   };
-
-  const headerRef = useRef(null);
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 595) {
-  //       headerRef.current.classList.add("header-text-change");
-  //     } else {
-  //       headerRef.current.classList.remove("header-text-change");
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
 
   useEffect(() => {
     const heroSection = document.querySelector(".hero-slide");
